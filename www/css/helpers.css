@@ -1,0 +1,38 @@
+header {
+	margin-top: 70px;
+}
+.app-logo {
+	display: flex;
+	justify-content: center;
+}
+.input-section {
+	margin-top: 40px;
+} 
+.input-section input {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+}
+::-webkit-input-placeholder {  Chrome/Opera/Safari 
+	color: black;
+}
+input:focus {
+	outline: none;
+	border-bottom: 1px solid skyblue;  
+}
+.input-section button {
+	width: 100%;
+	padding: 15px;
+	border-radius: 35px;
+	border: none;
+	background: #00BEE0;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 600;
+	outline: none;
+	margin-top: 15px;
+}
