@@ -1,12 +1,24 @@
-header {
+.headr-main-page {
 	margin-top: 70px;
 }
 .app-logo {
 	display: flex;
 	justify-content: center;
 }
+.home-page p {
+	text-align: center;
+	font-size: 18px;
+}
+.facebook-login {
+	width: 100%;
+	background-color: #3b5998;
+	color: #ffffff;
+	border: none;
+	font-size: 18px;
+	padding: 10px; 	
+}
 .input-section {
-	margin-top: 40px;
+	margin-top: 15px;
 } 
 .input-section input {
 	width: 100%;
@@ -15,16 +27,64 @@ header {
 	font-size: 16px;
 	text-align: center;
 	border-bottom: 1px solid black;
-	margin-bottom: 30px;
+	/*margin-bottom: 10px;*/
+	margin-bottom: 18px !important;
 }
 ::-webkit-input-placeholder {  Chrome/Opera/Safari 
 	color: black;
 }
 input:focus {
 	outline: none;
-	border-bottom: 1px solid skyblue;  
 }
-.input-section button {
+.register-button{
+	width: 100%;
+	border: none;
+	background: #515050;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 600;
+	outline: none;
+	margin-top: 15px;
+}
+/*css for home page containing register and login button*/
+/*css for main container*/
+.main-page {
+	margin-top: 80px !important;
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 100% !important;	
+	padding: 0px;
+} 
+.common {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.facebook-div {
+	padding: 0px !important;
+}
+.register-row {
+	width: 100%;
+	margin: 0px;
+	/*margin-left: 10px !important;*/
+	margin-right: 10px !important;
+}
+/*css for register button*/
+.register, .login {
+	background-color: #3EBDDE;
+}
+.register {
+	border-right: 1px solid #ffffff;
+}
+.register a, .login   a {
+	background-color: #3EBDDE; 
+	box-shadow: none;
+	
+}
+.login {
+	border-right: 1px solid #fff;
+}
+/*css for login button in login page*/
+.login-button {
 	width: 100%;
 	padding: 15px;
 	border-radius: 35px;
@@ -35,4 +95,141 @@ input:focus {
 	font-weight: 600;
 	outline: none;
 	margin-top: 15px;
+}
+.forget-password {
+	text-align: center;
+}
+.forget-password a {
+	font-size: 18px;
+	color: black;
+}
+/*css for registration page*/ 
+.register-header {
+	background-color: #3EBDDE; 
+	line-height: 4;
+	font-size: 18px;
+	color: #ffffff;
+}
+.backarrow {
+	text-align: center;
+	margin-top: 5px;
+}
+.backarrow img {
+	height: 24px;
+	width: 35px;
+}
+.registration-image {
+	text-align: center;
+}
+.registration-image img {
+	height: 65px;
+	width: 65px;
+}
+
+/*css for telephoneLogin page */
+.telephone-login {
+	background-color: #3EBDDE;
+	text-align: center;
+	color: #ffffff;
+}
+.telephone-heading {
+	margin-top: 40px;
+}
+.telephone-login .telephone-heading span {
+	font-size: 18px;
+}
+.tephone-input {
+	margin-top: 12vh;
+	padding-bottom: 15vh;
+}
+.tephone-input input {
+	border-bottom: 1px solid #ffffff !important;
+	color: #ffffff !important;
+	text-align: center;
+	font-size: 18px !important;
+}
+.telephoneLogin {
+	background-color: #515050;
+}
+.telephoneLogin button {
+	width: 100%;
+	border: none;
+	background: #515050;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 600;
+	outline: none;
+}
+
+/*css for categories page*/
+.menu-bar button {
+	background: none;
+	border: none;
+}
+.menu-bar img {
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+.find-helper {
+	text-align: center;
+}
+.find-helper {
+	font-size: 18px;
+}
+.find-helper {
+	margin-top: 15px;
+}
+.categories-images {
+	margin-top: 36px;
+}
+.categories-footer {
+	background: #3EBDDE !important;
+}
+.categories-footer button {
+	background: none;
+	border: none;
+}
+.categories-footer .material-icons {
+	color: #ffffff;
+	font-size: 25px;
+}
+
+/*common css for footer*/
+.common-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	border: 0;
+}
+
+/*css for carpenter page*/
+.carpenter-header {
+	background-color: #8D7B70; 
+	line-height: 4;
+	font-size: 18px;
+	color: #ffffff;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+.c_container {
+	z-index: 999;
+	margin-top: 65 	px !important;
+}
+.Carpenter-row {
+	margin-bottom: 0px !important
+}
+.carpenter table td {
+	padding: 0px !important;
+}
+.cicons i {
+	font-size: 100px;
+	    margin-top: 15px;
+}
+td.cnames {
+    font-size: 18px;
+    /* padding-top: 0px !important; */
+    /* margin: 0px !important; */
 }

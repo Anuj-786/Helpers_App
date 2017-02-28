@@ -28,40 +28,71 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+            <!--   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
             <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
             <!-- jQuery library -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+            <script src="js/jquery.js"></script>
             <!-- Latest compiled JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
             <link rel="stylesheet" type="text/css" href="css/helpers.css">
+            <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="css/materialize.min.css">
             <title>Hello World</title>
         </head>
         <body>
-            <header>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 app-logo">
+            <header class="headr-main-page">
+                <div class="row common">
+                    <div class="col s12 col m12 app-logo">
                         <img src="img/logo_helpers_nuevo.svg">
                     </div>
                     
                 </div>
             </header>
-            <div class="container">
-                <div class="col-sm-12 col-md-12 input-section ">
-                    <input type="text" name="full-name" placeholder="Nombre completo">
-                    <input type="number" name="telephone" placeholder="teléfono">
-                    <input type="text" name="mail" placeholder="correo">
-                    <input type="password" name="password" placeholder="contrasena">
-                    <input type="password" name="repeat-password" placeholder="repite to contrasena">
-                    <button type="submit" class="register-button">Register</button>                    
+            <div class="container main-page">
+                <div class="row common">
+                    <div class="col s12 col m12 home-page">
+                        <p>Descubre la primera comunidad
+                            de profesionales al servicio del hogar
+                            del Perú
+                        </p>
+                    </div>
                 </div>
-            </div>
+                <div class="row facebook-main common" >
+                    <div class="col s12 facebook-div">
+                        <button type="submit" class="facebook-login">Ingresar con Facebook</button>
+                    </div>
+                </div>
+                <div class="row register-row common">
+                    <div class="col s6 login">
+                        <a class="waves-effect waves-light btn" href="login.html">Inicia sesión</a>
+                    </div>
+                    <div class="col s6 col m6 col m6 register">
+                    <a class="waves-effect waves-light btn" href="registration.html">Regístrate</a>
+                    </div>
+                </div>
+                <div class="row des common">
+                    <div class="col s12 home-page">
+                      <p>
+                          Al usar Helpers estás de acuerdo con
+                          sus términos y condiciones.
+                      </p>
+                  </div>
+              </div>
 
-            <script type="text/javascript" src="cordova.js"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-        </body>
-        </html>
+          </div>
+          
+
+
+          <script type="text/javascript" src="cordova.js"></script>
+          <script type="text/javascript" src="js/index.js"></script>
+
+
+          <!-- Compiled and minified JavaScript -->
+          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script> -->
+
+      </body>
+      </html>
