@@ -83,6 +83,9 @@ input:focus {
 .login {
 	border-right: 1px solid #fff;
 }
+.login-input-section  {
+	margin-top: 50px;
+}
 /*css for login button in login page*/
 .login-button {
 	width: 100%;
@@ -202,6 +205,7 @@ input:focus {
 	right: 0;
 	width: 100%;
 	border: 0;
+	bottom: 0px;
 }
 
 /*css for carpenter page*/
@@ -226,10 +230,33 @@ input:focus {
 }
 .cicons i {
 	font-size: 100px;
-	    margin-top: 15px;
+	margin-top: 15px;
 }
 td.cnames {
-    font-size: 18px;
-    /* padding-top: 0px !important; */
-    /* margin: 0px !important; */
+	font-size: 18px;
+	/* padding-top: 0px !important; */
+	/* margin: 0px !important; */
 }
+
+/*media query for responsive*/
+/*media query for iphone 5*/
+@media screen and (device-aspect-ratio: 40/71) {
+	.input-section .reg-input {
+		height: 2.4em;
+	}
+}
+/*media query for iphone 6s*/
+@media screen and (device-aspect-ratio: 375/667) {
+	.input-section .reg-input {
+		height: 3.6rem;
+	}
+}
+/*media query for iphone 6s plus*/
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+	.input-section .reg-input {
+		height: 4.4rem;
+	}
+}
+
+
