@@ -205,7 +205,7 @@ input:focus {
 	right: 0;
 	width: 100%;
 	border: 0;
-	bottom: 0px;
+	bottom: 0px; 
 }
 
 /*css for carpenter page*/
@@ -253,10 +253,8 @@ td.cnames {
 }
 /*media query for iphone 6s plus*/
 /*iPhone 6+ Portrait*/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) { 
 	.input-section .reg-input {
 		height: 4.4rem;
 	}
 }
-
-
